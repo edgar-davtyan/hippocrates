@@ -1,0 +1,85 @@
+.subsccribe_box {
+  max-width: 725px;
+  margin: auto;
+
+  .subsccribe_formBtn_box {
+    margin-top: 40px;
+
+    .subsccribe_form {
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+
+      label {
+        position: relative;
+        display: block;
+
+        .icon_box {
+          position: absolute;
+          top: 23px;
+          left: 30px;
+          transform: translate(1px, 1px);
+        }
+      }
+
+      input {
+        transition: all 0.3s;
+        width: 410px;
+        outline: none;
+        max-width: 495px;
+        padding: 24px 60px;
+        border-radius: 10px;
+        background: #ffffff;
+        border: 1px solid #f6f8fc;
+
+        &:focus {
+          transition: all 0.3s;
+          border: 1px solid #5d5fef;
+        }
+
+        &::placeholder {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 14px;
+          color: #132537;
+        }
+      }
+
+      .inner_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 21px 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .subsccribe_form {
+    row-gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subsccribe_box {
+    .subsccribe_form {
+      label {
+        width: 100%;
+
+        input {
+          box-sizing: border-box;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+
+      .inner_button {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

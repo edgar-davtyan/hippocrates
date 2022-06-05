@@ -1,0 +1,31 @@
+.modal_section {
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+
+  .modal_container {
+    width: 601px;
+    transition: all 1s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+    min-height: 200px;
+    padding: 40px 60px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal_container {
+    width: 90% !important;
+    padding: 24px !important;
+  }
+}

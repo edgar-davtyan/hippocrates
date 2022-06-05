@@ -1,0 +1,147 @@
+.send_message_banner_container {
+  width: -webkit-fill-available;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #f6f8fc;
+  position: static;
+
+  .send_banner {
+    transition: all 0.3s;
+    height: 65px;
+    max-width: 860px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .choose_option_message {
+    display: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 24px;
+    background: #ffffff;
+
+    .option_message_box {
+      border-top: 1px solid #ecf3ff;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        margin: 16px 0 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #000000;
+      }
+      .option_icon {
+        width: 24px;
+      }
+    }
+
+    .choose_btn {
+      transition: all 0.3s;
+      overflow: hidden;
+      display: flex;
+      row-gap: 8px;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 24px;
+      background: #ffffff;
+
+      button {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 24px;
+        border-radius: 16px;
+        box-shadow: none;
+      }
+
+      button:nth-child(1) {
+        margin-top: 15px;
+      }
+
+      button:nth-child(3) {
+        background: #fff7ff;
+        border: 1px solid #fff7ff;
+
+        p {
+          color: #ff6161;
+        }
+      }
+    }
+  }
+}
+
+.send_box {
+  position: relative;
+  label {
+    width: 100%;
+
+    input {
+      transition: all 0.3s;
+      opacity: 1;
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #dbd8fc;
+      padding: 24px 65px 24px 24px;
+      box-shadow: 0px 100px 80px rgba(41, 72, 152, 0.05),
+        0px 64.8148px 46.8519px rgba(41, 72, 152, 0.037963),
+        0px 38.5185px 25.4815px rgba(41, 72, 152, 0.0303704),
+        0px 20px 13px rgba(41, 72, 152, 0.025),
+        0px 8.14815px 6.51852px rgba(41, 72, 152, 0.0196296),
+        0px 1.85185px 3.14815px rgba(41, 72, 152, 0.012037);
+    }
+  }
+
+  .send_message_icon {
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    transform: translate(0);
+  }
+}
+
+.hide_send_message_banner {
+  transition: all 0.3s;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 !important;
+
+  .send_banner {
+    transition: all 0.3s;
+    overflow: hidden;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .send_message_banner_container {
+    padding: 24px 0;
+
+    .send_banner {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .send_message_banner_container {
+    padding: 0 0 24px;
+
+    .choose_option_message {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.btn {
+  transition: all 0.3s;
+  display: block;
+  cursor: pointer;
+  padding: 16px 24px;
+  text-align: center;
+  border-radius: 16px;
+  background: #5d5fef;
+  border: 2px solid #5d5fef;
+
+  p {
+    transition: all 0.3s;
+    color: #ffffff;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: transparent;
+
+    p {
+      transition: all 0.3s;
+      color: #132537;
+    }
+  }
+}
+
+.transparent_btn {
+  transition: all 0.3s;
+  border: none;
+  border: 2px solid #5d5fef;
+  background-color: transparent;
+
+  p {
+    transition: all 0.3s;
+    color: #132537;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    background: #5d5fef;
+
+    p {
+      transition: all 0.3s;
+      color: #ffffff;
+    }
+  }
+}
+
+.btn_text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+}

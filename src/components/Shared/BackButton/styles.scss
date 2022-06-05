@@ -1,0 +1,30 @@
+.back_button_box {
+  cursor: pointer;
+  width: 97px;
+  height: 39px;
+  border-radius: 90px;
+  padding: 11px 24px 11px 16px;
+  border: 2px solid #e6e8ec;
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  p {
+    margin: 0;
+    color: #23262f;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .back_button_icon {
+    width: 16px;
+    height: 16px;
+    
+    div {
+      width: auto;
+    }
+  }
+}

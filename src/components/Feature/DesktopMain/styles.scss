@@ -1,0 +1,59 @@
+.desktop_main_container {
+  .desktop_main_box {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    column-gap: 40px;
+
+    .account_section {
+      min-width: 330px;
+      padding: 94px 15px 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.desktop_main_section {
+  max-height: 808px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 94px 15px 114px 86px;
+  border-left: 1px solid #ecf3ff;
+
+  .row_section {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    margin: 20px 0 54px;
+
+    .time_text {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      color: #000000;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .account_section {
+    display: none;
+  }
+  .desktop_main_section {
+    padding: 94px 24px 114px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row_section {
+    flex-direction: column;
+
+    p {
+      order: 1;
+      width: 100%;
+      margin-top: 4px !important;
+    }
+  }
+}

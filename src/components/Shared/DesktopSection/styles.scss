@@ -1,0 +1,15 @@
+.desktop_container {
+  max-width: 802px;
+  margin-top: 50px;
+  box-sizing: border-box;
+
+  .row {
+    margin: 24px 0 64px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .desktop_container {
+    max-width: 100%;
+  }
+}

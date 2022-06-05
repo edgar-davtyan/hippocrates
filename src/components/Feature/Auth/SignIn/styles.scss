@@ -1,0 +1,200 @@
+.sign_in_container {
+  .sign_in_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f8fc;
+
+    .signIn_form_box {
+      width: calc(100% - 472px);
+      box-sizing: border-box;
+      padding: 0 65px 0 34px;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .form_box {
+        width: 448px;
+        max-width: 448px;
+        margin: auto;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 24px 28px 21px 28px;
+
+        .title_subtitle_box {
+          p {
+            margin-top: 16px;
+          }
+        }
+
+        .form {
+          display: flex;
+          row-gap: 32px;
+          margin-top: 40px;
+          flex-direction: column;
+
+          label {
+            input {
+              transition: all 0.3s;
+              width: 100%;
+              outline: none;
+              border-radius: 10px;
+              background: #ffffff;
+              box-sizing: border-box;
+              padding: 24px 28px 21px;
+              border: 1px solid #ecf3ff;
+
+              &:focus {
+                transition: all 0.3s;
+                border: 1px solid #5d5fef;
+              }
+
+              &::placeholder {
+                color: #5a5a5a;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 14px;
+              }
+            }
+            .invalid_text {
+              margin: 8px 0px 0;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 12px;
+              color: #ff6161;
+            }
+          }
+
+          .forgot_password {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+              color: #5d5fef;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 14px;
+            }
+          }
+
+          .sign_btn {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .inner_button {
+              width: 100%;
+              max-width: 100%;
+              margin-top: 10px;
+            }
+
+            a {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .sign_in_img {
+      width: 472px;
+      background-image: url("../../../../public/images/authImg/sign.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sign_in_container {
+    .sign_in_box {
+      background-image: none;
+      justify-content: center;
+
+      .signIn_form_box {
+        width: 100%;
+        padding: 0 40px;
+
+        .forgot_password {
+          row-gap: 5px;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign_in_container {
+    .sign_in_box {
+      .signIn_form_box {
+        .form_box {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          margin: 84px auto;
+
+          .title_subtitle_box {
+            h3 {
+              font-size: 28px;
+            }
+
+            .description_text {
+              font-size: 13px;
+            }
+          }
+
+          .forgot_password {
+            row-gap: 5px;
+            flex-direction: row;
+            justify-content: flex-end !important;
+
+            .switch_input_box {
+              display: none;
+            }
+          }
+
+          .form {
+            .sign_btn {
+              row-gap: 24px;
+              margin-top: 84px;
+
+              a {
+                width: 100%;
+                display: block;
+
+                .inner_button {
+                  border-radius: 16px;
+                  background: #ecf3ff;
+                  border: 1px solid transparent;
+                  box-shadow: 0px 20px 40px rgba(84, 86, 255, 0.3);
+
+                  p {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #5d5fef;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .auth_header_container {
+          display: none;
+        }
+      }
+
+      .sign_in_img {
+        display: none;
+      }
+    }
+  }
+}

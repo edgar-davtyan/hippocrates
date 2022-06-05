@@ -1,0 +1,20 @@
+.social_contact_box {
+  text-align: right;
+
+  p {
+    margin: 25px 0;
+    a {
+      cursor: pointer;
+      margin: 25px 0;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+  p:first-of-type {
+    a {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+}

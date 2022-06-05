@@ -1,0 +1,15 @@
+export const DESCRIPTION_ITEMS = [
+  { text: "headache" },
+  { text: "dyspnea" },
+  { text: "chest pain" },
+  { text: "dizziness" },
+  { text: "weakness" },
+  { text: "fall" },
+  { text: "syncope" },
+  { text: "vertigo" },
+  { text: "sweat" },
+  { text: "sweating increased" },
+  { text: "palpitation" },
+  { text: "nausea" },
+  { text: "pressure chest" },
+];

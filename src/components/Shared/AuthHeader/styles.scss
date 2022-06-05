@@ -1,0 +1,32 @@
+.auth_header_container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+
+  .auth_header_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .auth_header_text {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+
+      p {
+        margin: 0;
+        color: #5a5a5a;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+
+      a {
+        font-weight: 700;
+        line-height: 18px;
+        color: #5d5fef;
+      }
+    }
+  }
+}

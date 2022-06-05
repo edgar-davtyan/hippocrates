@@ -1,0 +1,27 @@
+.tag_box {
+  min-width: 78px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #ecf4ff;
+  border: 1px solid #ecf4ff;
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .tag_text {
+    margin: 0;
+    color: #132537;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+
+  .tag_icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,141 @@
+.advisor_container {
+  background: linear-gradient(180deg, #eaeffb 0%, rgba(234, 239, 251, 0) 100%);
+
+  .additional_box {
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #5d5fef;
+      text-align: center;
+    }
+
+    p {
+      max-height: 400px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #132537;
+      overflow-y: scroll;
+    }
+  }
+}
+
+.advisor_box {
+  padding: 120px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advisor_info {
+  max-width: 522px;
+  display: flex;
+  row-gap: 24px;
+  padding: 75px 0;
+  flex-direction: column;
+
+  .info_btn {
+    position: absolute;
+    z-index: 15;
+    width: 173px;
+    height: 60px;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 100px;
+    background: #fff0dc;
+
+    p {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      color: #fb9333;
+    }
+  }
+
+  .info_title {
+    p {
+      margin: 0;
+      font-weight: 900;
+      font-size: 56px;
+      line-height: 64px;
+
+      span {
+        display: block;
+        color: #5d5fef;
+      }
+    }
+  }
+
+  .info_subtitle {
+    margin-bottom: 16px;
+    p {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #132537;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advisor_box {
+    padding-top: 125px;
+  }
+
+  .advisor_info {
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+
+    .info_btn {
+      width: 133px;
+      height: 54px;
+      padding: 16px, 24px, 16px, 24px;
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+
+    .info_title {
+      p {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 46px;
+      }
+    }
+
+    .info_subtitle {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .advisor_img {
+    display: none;
+  }
+
+  .banner_container {
+    .btn {
+      width: 100%;
+      border-radius: 16px;
+      background: #ecf3ff;
+      border: 1px solid #ecf3ff;
+
+      p {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #132537;
+      }
+    }
+  }
+}

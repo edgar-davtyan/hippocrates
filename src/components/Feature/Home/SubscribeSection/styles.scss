@@ -1,0 +1,11 @@
+.subscribe_container {
+  margin-top: 85px;
+  padding: 60px 40px;
+  background: #ecf3ff;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe_container {
+    padding: 60px 0;
+  }
+}
